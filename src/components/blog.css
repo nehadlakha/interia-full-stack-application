@@ -1,0 +1,131 @@
+.section1-blog {
+    background: url("../images/blog1.jpg");
+    width: 98.9vw;
+    height: 45vh;
+    position: relative;
+    z-index: 2;
+    background-repeat: no-repeat;
+    margin-top: -7%;
+    background-size: cover;
+    background-color: rgb(237, 237, 237);
+}
+
+.about-black {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-black:before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    width: 98.9vw;
+    height: 45vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.about-black h1 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: 10%;
+}
+
+.section2-blog {
+    width: 98.9vw;
+    background-color: rgb(237, 237, 237);
+    padding: 5% 0;
+}
+
+.section2-blog h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+    margin-left: 10%;
+}
+
+.section2-blog button {
+    float: right;
+    margin: -3% 20%;
+}
+
+.section2-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+    margin-top: 5%;
+}
+
+.news1 img,
+.news2 img,
+.news3 img {
+    width: 27vw;
+    transition: width 1s;
+    height: 43vh;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.news1 div,
+.news2 div,
+.news3 div {
+    background-color: #ffffff;
+    width: 80%;
+    height: 20vh;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: -10%;
+    z-index: 5;
+    position: relative;
+    padding: 2%;
+}
+
+.news1 div,
+.news2 div,
+.news3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20%;
+}
+
+.news1 div>h2,
+.news2 div>h2,
+.news3 div>h2 {
+    font-size: large;
+}
+
+.news1 div>h3,
+.news2 div>h3,
+.news3 div>h3 {
+    margin-top: 5%;
+    font-size: 15px;
+    color: #5f5e5e;
+}
+
+.news1 div:hover,
+.news2 div:hover,
+.news3 div:hover {
+    background-color: rgb(226, 208, 91);
+    transform: translateY(-6px);
+    transition-duration: 1s;
+}
+
+.news1 img:hover,
+.news2 img:hover,
+.news3 img:hover {
+    width: 28vw;
+    /* transition-duration: 2s; */
+
+}
+
+.news1:hover,
+.news2:hover,
+.news3:hover {
+    cursor: pointer;
+}
