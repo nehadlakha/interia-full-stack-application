@@ -3,8 +3,10 @@ import Navbar from "./Navbarr";
 import Footer from "./Footer";
 import "./about.css";
 import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa";
+import { AnimatedOnScroll } from "react-animate-on-scroll";
 
 const About = () => {
+
     return (
         <>
             <Navbar />
@@ -14,7 +16,7 @@ const About = () => {
                 </div>
             </section>
             <section className="section2-about">
-                <div className="s2-img">
+                <div className="wow fadeIn s2-img">
                     <img className="img1" src={require("../images/about2.jpg")} />
                     <img className="img2" src={require("../images/about1.jpg")} />
                 </div>
@@ -26,17 +28,19 @@ const About = () => {
                         <br /><br />
                         If you're looking for a professional, reliable, and experienced interior design company, look no further than Blue Crane Interior Designer. Contact us today to schedule a consultation and take the first step toward creating your dream space.
                     </p>
-                    <button className="button-30">Booking Now</button>
+                    <button className="button-30 booking-now">Booking Now</button>
                 </div>
             </section>
-            <section className="section3-about">
-                <div className="about-black1">
-                    <div>
-                        <h1>Get Professional & Luxury Interiors & Morden Furniture.</h1>
-                        <button className="button-30">Play Video</button>
+            <AnimatedOnScroll animationIn="bounceInRight">
+                <section className="section3-about">
+                    <div className="about-black1">
+                        <div>
+                            <h1>Get Professional & Luxury Interiors & Morden Furniture.</h1>
+                            <button className="button-30">Play Video</button>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </AnimatedOnScroll>
             <section className="section4-about">
                 <h1>Meet Our Team</h1>
                 <div className="s4-content">

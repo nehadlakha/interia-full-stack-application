@@ -48,7 +48,7 @@ const RetailSlider = () => {
                     >
                         {index === currentSlide && (
                             <div>
-                                <img src={slide.image} alt="slide" className="image" />
+                                <img src={slide.image} alt="slide" className="slider-img" />
                             </div>
                         )}
                     </div>

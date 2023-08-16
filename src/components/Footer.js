@@ -47,20 +47,20 @@ const Footer = () => {
                     <img src={require("../images/logo.jpeg")} />
                     <div className="important-links">
                         <h1>Important Links</h1>
-                        <h4 onClick={routeChangeHome}>Home</h4>
-                        <h4 onClick={routeChangeAbout}>About</h4>
-                        <h4 onClick={routeChangeBlog}>Blog</h4>
-                        <h4 onClick={routeChangeContact}>Contact</h4>
-                        <h4 onClick={routeChangeCareer}>Career</h4>
+                        <h4 className="path" onClick={routeChangeHome}>Home</h4>
+                        <h4 className="path" onClick={routeChangeAbout}>About</h4>
+                        <h4 className="path" onClick={routeChangeBlog}>Blog</h4>
+                        <h4 className="path" onClick={routeChangeContact}>Contact</h4>
+                        <h4 className="path" onClick={routeChangeCareer}>Career</h4>
                     </div>
                     <div className="social-media">
                         <h1>Social Media</h1>
-                        <div className="insta"><FaInstagram size={'2vw'} /></div>
-                        <div className="facebook"><FaFacebook size={'2vw'} /></div>
-                        <div className="twitter"><FaTwitter size={'2vw'} /></div>
+                        <div className="insta"><a href="https://instagram.com/interiaentreprises?igshid=MmU2YjMzNjRlOQ=="><FaInstagram size={'30%'} color={'white'} /></a></div>
+                        <div className="facebook"><a href="https://instagram.com/interiaentreprises?igshid=MmU2YjMzNjRlOQ=="><FaFacebook size={'30%'} color={'white'} /></a></div>
+                        <div className="twitter"><a href="https://instagram.com/interiaentreprises?igshid=MmU2YjMzNjRlOQ=="><FaTwitter size={'30%'} color={'white'} /></a></div>
                     </div>
                     <div className="subscribe">
-                        <input type="email" />
+                        <input type="email" placeholder="Enter your email" />
                         <button className="button-30">Subscribe</button>
                     </div>
                 </div>

@@ -10,14 +10,14 @@
     background-color: rgb(237, 237, 237);
 }
 
-.about-black {
+.blog-black {
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
 }
 
-.about-black:before {
+.blog-black:before {
     position: absolute;
     content: '';
     background-color: black;
@@ -27,7 +27,7 @@
     opacity: 0.7;
 }
 
-.about-black h1 {
+.blog-black h1 {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -45,11 +45,6 @@
     font-family: 'Lilita One', cursive;
     font-size: 50px;
     margin-left: 10%;
-}
-
-.section2-blog button {
-    float: right;
-    margin: -3% 20%;
 }
 
 .section2-content {
@@ -128,4 +123,87 @@
 .news2:hover,
 .news3:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width:970px) {
+    .section1-blog {
+        height: 50vh;
+        margin-top: -15%;
+    }
+
+    .blog-black:before {
+        height: 50vh !important;
+    }
+
+    .blog-black h1 {
+        margin-top: 20% !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .section2-blog {
+        margin-bottom: -20%;
+    }
+
+    .section2-content {
+        grid-template-columns: auto;
+        justify-items: center;
+        row-gap: 3%;
+    }
+
+    .news1,
+    .news2,
+    .news3 {
+        width: 60vw;
+    }
+
+    .news1 img,
+    .news2 img,
+    .news3 img {
+        width: 60vw !important;
+        height: 47vh;
+    }
+
+    .news1 div,
+    .news2 div,
+    .news3 div {
+        width: 80%;
+        height: 22vh;
+        padding: unset !important;
+    }
+
+    .news1 div,
+    .news2 div,
+    .news3 div {
+        justify-content: center;
+        row-gap: 8%;
+    }
+
+    .news1 img:hover,
+    .news2 img:hover,
+    .news3 img:hover {
+        width: 71vw;
+    }
+
+    .news1 div>h2,
+    .news2 div>h2,
+    .news3 div>h2 {
+        font-size: medium;
+        padding: 3%;
+    }
+
+    .news1 div>h3,
+    .news2 div>h3,
+    .news3 div>h3 {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:479px) {
+    .about-black h1 {
+        margin-top: 22% !important;
+        font-size: 40px;
+    }
 }

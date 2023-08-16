@@ -31,7 +31,7 @@ const Blog = () => {
         <>
             <Navbar />
             <section className="section1-blog">
-                <div className="about-black">
+                <div className="blog-black">
                     <h1>Blogs</h1>
                 </div>
             </section>

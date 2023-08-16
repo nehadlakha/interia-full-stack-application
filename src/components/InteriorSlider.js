@@ -48,7 +48,7 @@ const InteriorSlider = () => {
                     >
                         {index === currentSlide && (
                             <div>
-                                <img src={slide.image} alt="slide" className="image" />
+                                <img className="slider-img" src={slide.image} alt="slide" />
                             </div>
                         )}
                     </div>

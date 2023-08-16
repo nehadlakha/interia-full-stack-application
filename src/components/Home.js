@@ -55,6 +55,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <div className="space-btw"></div>
             <section className="section-2">
                 <div className="grid-item item1">
                     <div>
@@ -102,6 +103,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <div className="space-btw"></div>
             <section className="section-3-sliders">
                 <div className="interior-slider" >
                     <h3>Interior</h3>
